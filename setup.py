@@ -9,7 +9,7 @@ setuptools.setup(
     name="todo_list",
     version="0.0.1",
 
-    description="A sample CDK Python app",
+    description="An empty CDK Python app",
     long_description=long_description,
     long_description_content_type="text/markdown",
 
@@ -19,12 +19,12 @@ setuptools.setup(
     packages=setuptools.find_packages(where="todo_list"),
 
     install_requires=[
-        "aws-cdk.core==1.80.0",
-        "aws-cdk.aws_iam==1.80.0",
-        "aws-cdk.aws_sqs==1.80.0",
-        "aws-cdk.aws_sns==1.80.0",
-        "aws-cdk.aws_sns_subscriptions==1.80.0",
-        "aws-cdk.aws_s3==1.80.0",
+        "aws-cdk.core==1.89",
+        "aws-cdk.aws-dynamodb",
+        "aws-cdk.aws-lambda",
+        "aws_cdk.aws_cognito",
+        "aws_cdk.aws_apigateway",
+        "aws_cdk.aws_cloudwatch"
     ],
 
     python_requires=">=3.6",

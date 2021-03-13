@@ -6,6 +6,6 @@ from todo_list.todo_list_stack import TodoListStack
 
 
 app = core.App()
-TodoListStack(app, "todo-list", env={'region': 'us-west-2'})
+TodoListStack(app, "todo-list")
 
 app.synth()
